@@ -25,7 +25,7 @@ body:
       - Item 3
       - Item 4
       - Item 5
-  - type: test_textarea
+  - type: textarea
     id: test_textarea
     attributes:
       label: Test Text Area
