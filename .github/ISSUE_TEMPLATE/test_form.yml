@@ -25,4 +25,12 @@ body:
       - Item 3
       - Item 4
       - Item 5
- 
+  - type: test_textarea
+    id: test_textarea
+    attributes:
+      label: Test Text Area
+      description: description
+      placeholder: >
+        Please provide as much context as possible
+    validations:
+      required: true
