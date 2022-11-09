@@ -1,0 +1,101 @@
+name: Enablement Initiative Request Test
+description: |
+  **PSN USE ONLY** This intake form is for requesting communications and enablement resources
+  for a product launch being supported by PSN.
+title: "Launch Date [yyyy/mm/dd] Vault Project Title"
+labels: ["Launch Communications & Enablement"]
+assignees:
+  -
+body:
+  - type: input
+    id: vault_project_link
+    attributes:
+      label: Vault Project link
+      description: The link to the related vault project.
+      placeholder: "Example: https://vault.shopify.io/projects/00000"
+    validations:
+      required: true
+  - type: input
+    id: care_package_link
+    attributes:
+      label: Care Package link
+      description: If there is a care package for your request, please link it here.
+    validations:
+      required: false
+  - type: input
+    id: launch_date
+    attributes:
+      label: Launch Date
+      description: When is this expected to launch?
+      placeholder: "Example: January, 1st 2023"
+    validations:
+      required: true
+  - type: input
+    id: docs_link
+    attributes:
+      label: Help Docs Request
+      description: If help docs have been requested, please link them here. If they have not been requested, briefly explain why.
+    validations:
+      required: false
+  - type: textarea
+    id: anticipated_impact
+    attributes:
+      label: Anticipated Support Impact
+      description: What is the anticiated support impact?
+      placeholder: >
+        If you are unsure, that is okay! We will look to add more ways for you to determine this in the future,
+        but for now are just looking for your input!
+    validations:
+      required: false
+  - type: textarea
+    id: product_contacts
+    attributes:
+      label: Relevant Product Contacts
+      description: List any relevant Product Managers/Champions/Product Marketing Managers/Subject Matter Experts.
+      placeholder: |
+        Don't worry, if we do need to reach out to any of these contacts we will be sure to loop you in!
+    validations:
+      required: false
+  - type: textarea
+    id: other_links
+    attributes:
+      label: Any relevant links not referenced in the Care Package?
+      placeholder: "Any relevant slack channels, planning docs, etc"
+    validations:
+      required: false
+  - type: textarea
+    id: ui_screenshots
+    attributes:
+      label: Any UI screenshots not referenced in Care Package?
+      placeholder: "It's okay if they are already in the Care Package! No need to submit twice!"
+    validations:
+      required: false
+  - type: textarea
+    id: demo_needed
+    attributes:
+      label: Would you like to do a demo for this launch?
+      placeholder: "Let us know what your thoughts are and we can coordinate these together! "
+    validations:
+      required: false
+  - type: textarea
+    id: anything_else
+    attributes:
+      label: Anything else we should know? Please include a TLDR of the project
+      description: Is there any other information we should know about this request?
+      placeholder: "Please include a TLDR"
+    validations:
+      required: false
+  - type: checkboxes
+    id: before_submit
+    attributes:
+      label: Before Submitting Checklist
+      description: Please complete the following before submitting
+      options:
+        - label: Ensure title format is "Launch Date [yyyy/mm/dd] Vault Project Title" (square brackets and date format matter for reporting)
+          required: true
+        - label: Add tag with tier
+          required: true
+        - label: Add tag with product group (you may need to add your product group if submitting for the first time)
+          required: true
+        - label: Add tag with product org (Core, Merchant Services, Commercial, or Standalone)
+          required: true
