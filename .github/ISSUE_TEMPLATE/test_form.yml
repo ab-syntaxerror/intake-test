@@ -14,4 +14,15 @@ body:
       placeholder: 
     validations:
       required: true
+  - type: dropdown
+    id: test_dropdown
+    attributes:
+      label: Dropdown test
+      description: description
+      options: 
+      - Item 1
+      - Item 2
+      - Item 3
+      - Item 4
+      - Item 5
  
